@@ -1,4 +1,4 @@
-name: "[CI]"
+name: "[CI] Upstream Master"
 
 on:
   push:
@@ -109,11 +109,8 @@ jobs:
         with:
           images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME_LC }}
           tags: |
-            type=ref,event=branch
-            type=ref,event=pr
-            type=semver,pattern={{version}}
-            type=semver,pattern={{major}}.{{minor}}
-
+            type=raw,value=latest
+            type=raw,value=${{ env.UPSTREAM_BRANCH }}
       - name: Create manifest list and push
         working-directory: ${{ runner.temp }}/digests
         run: |
