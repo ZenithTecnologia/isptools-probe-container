@@ -80,6 +80,12 @@ jobs:
     needs:
       - build
     steps:
+      - name: set lower case image_name
+        run: |
+          echo "IMAGE_NAME_LC=${IMAGE_NAME,,}" >>${GITHUB_ENV}
+        env:
+          OWNER: '${{ env.IMAGE_NAME }}'
+
       - name: Download digests
         uses: actions/download-artifact@v4
         with:
