@@ -1,0 +1,19 @@
+[Unit]
+Description=ISP Tools Probe
+After=local-fs.target
+Requires=network-online.target
+
+[Service]
+Restart=always
+
+[Container]
+ContainerName=isp-tools-probe
+LogDriver=journald
+HostName=isp-tools-probe
+Image=ghcr.io/zenithtecnologia/isptools-probe-container:latest
+Pull=newer
+EnvironmentHost=false
+PublishPort=8000:8000
+
+[Install]
+WantedBy=multi-user.target default.target

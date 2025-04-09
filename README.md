@@ -10,6 +10,19 @@ This repository is https://github.com/isptools/probe compiled with RedHat UBI im
 
 ## How to use?
 
+### Quadlet way (Prefered):
+
+Install your distro podman package and copy file `isp-tools-probe.container` to `/etc/containers/systemd` folder and run:
+
+```bash
+systemctl daemon-reload
+systemctl start isp-tools-probe
+```
+
+This Quadlet register itself on systemd boot process.
+
+### Vanilla way:
+
 Replace `isptools/probe` container image from [ISP.tools instructions](http://www.isp.tools/instrucoes) with image `ghcr.io/zenithtecnologia/isptools-probe-container:latest`.
 
 ## Notes
