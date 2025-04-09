@@ -1,12 +1,16 @@
-name: "[CI] Upstream v2"
+name: "[CI] Upstream v2.0"
 
 on:
   push:
+    paths:
+      - 'Containerfile'
+      - '.github/workflows/container-build-branch-v2.0.yml'
+
   schedule:
     - cron: '42 2 * * 6'
 
 env:
-  UPSTREAM_BRANCH: v2
+  UPSTREAM_BRANCH: v2.0
   REGISTRY: ghcr.io
   IMAGE_NAME: ${{ github.repository }}
 

@@ -2,6 +2,9 @@ name: "[CI] Upstream Master"
 
 on:
   push:
+    paths:
+      - 'Containerfile'
+      - '.github/workflows/container-build-branch-master.yml'
   schedule:
     - cron: '42 2 * * 6'
 
