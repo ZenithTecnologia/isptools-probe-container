@@ -13,7 +13,8 @@ HostName=isp-tools-probe
 Image=ghcr.io/zenithtecnologia/isptools-probe-container:latest
 Pull=newer
 EnvironmentHost=false
-PublishPort=8000:8000
+Network=host
+AddCapability=NET_RAW
 
 [Install]
 WantedBy=multi-user.target default.target
