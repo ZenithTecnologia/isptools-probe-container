@@ -6,7 +6,7 @@ on:
     - cron: '42 2 * * 6'
 
 env:
-  UPSTREAM_BRANCH: develop
+  UPSTREAM_BRANCH: master
   REGISTRY: ghcr.io
   IMAGE_NAME: ${{ github.repository }}
 
