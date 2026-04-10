@@ -127,10 +127,10 @@ jobs:
   cleaner:
     runs-on: ubuntu-latest
     needs:
-      - build
+      - merge
     steps:
       - uses: actions/delete-package-versions@v5
         with:
-        package-name: isptools-probe-container
-        package-type: container
-        min-versions-to-keep: 5
+          package-name: isptools-probe-container
+          package-type: container
+          min-versions-to-keep: 5
