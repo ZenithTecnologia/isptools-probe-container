@@ -2,7 +2,7 @@
 
 ## Status
 
-[![[CI] Upstream Master](https://github.com/ZenithTecnologia/isptools-probe-container/actions/workflows/container-build-branch-master.yml/badge.svg)](https://github.com/ZenithTecnologia/isptools-probe-container/actions/workflows/container-build-branch-master.yml) [![[CI] Upstream v2.0](https://github.com/ZenithTecnologia/isptools-probe-container/actions/workflows/container-build-branch-v2.0.yml/badge.svg)](https://github.com/ZenithTecnologia/isptools-probe-container/actions/workflows/container-build-branch-v2.0.yml)
+[![[CI] Upstream Main](https://github.com/ZenithTecnologia/isptools-probe-container/actions/workflows/container-build-branch-main.yml/badge.svg)](https://github.com/ZenithTecnologia/isptools-probe-container/actions/workflows/container-build-branch-main.yml)
 
 ## What is?
 

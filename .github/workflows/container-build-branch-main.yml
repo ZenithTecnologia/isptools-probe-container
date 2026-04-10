@@ -1,4 +1,4 @@
-name: "[CI] Upstream Master"
+name: "[CI] Upstream Main"
 
 on:
   push:
