@@ -13,4 +13,4 @@ RUN /usr/libexec/s2i/assemble
 FROM registry.access.redhat.com/ubi10/nodejs-22-minimal:latest AS runner
 COPY --from=builder $HOME $HOME
 EXPOSE 8000
-CMD /usr/libexec/s2i/run
+CMD ["/usr/libexec/s2i/run"]
