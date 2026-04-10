@@ -4,12 +4,12 @@ on:
   push:
     paths:
       - 'Containerfile'
-      - '.github/workflows/container-build-branch-master.yml'
+      - '.github/workflows/container-build-branch-main.yml'
   schedule:
     - cron: '42 2 * * 6'
 
 env:
-  UPSTREAM_BRANCH: master
+  UPSTREAM_BRANCH: main
   REGISTRY: ghcr.io
   IMAGE_NAME: ${{ github.repository }}
 
