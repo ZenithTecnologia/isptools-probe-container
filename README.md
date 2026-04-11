@@ -17,6 +17,7 @@ Install your distro podman package and copy file `isp-tools-probe.container` to 
 ```bash
 systemctl daemon-reload
 systemctl start isp-tools-probe
+systemctl enable podman-auto-update.timer
 ```
 
 This Quadlet register itself on systemd boot process.
