@@ -19,6 +19,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/delete-package-versions@v5
+        continue-on-error: true
         with:
           package-name: isptools-probe-container
           package-type: container
